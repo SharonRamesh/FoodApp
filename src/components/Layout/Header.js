@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './Header.module.css'
-import meals  from "../../Assets/meals.jpg";
+import meals  from "../../Assets/meals-new.jpg";
 import HeaderCart from '../Cart/HeaderCartButton'
 
 const Header = (props) => {
