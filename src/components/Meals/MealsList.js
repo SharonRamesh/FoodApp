@@ -8,14 +8,19 @@ const MealsList = (props) => {
     const [numberofItem,updateItem] = useState(0);
 
     const handleChange = (event) => {
-        updateItem(event.target.value)
+        updateItem(+event.target.value)
     }
 
-    const addToCart = (id,numberofItem) => { 
+    const addCart = (id,price,name,numberofItem) => { 
         if(+numberofItem > 0){
-            contxt.cart = [...contxt.items,{id:id,no:numberofItem}];
+            // contxt.cart = [...contxt.items,{id:id,no:numberofItem}];
+            contxt.addItem({
+                id:id,
+                price:price,
+                name:name,
+                totalAmount:numberofItem
+            })
             updateItem(0);
-            console.log(contxt.cart);
         }
     }
 
@@ -32,7 +37,7 @@ const MealsList = (props) => {
                         <h4>Amount</h4>
                         <InputComponent type='number' styleClass={classes.inputClass} value={numberofItem !==0  ? numberofItem : ''} onChangeHandler={handleChange}/>
                     </span>
-                    <button onClick={() => addToCart(meal.id,numberofItem)} className={classes.addButton}>+Add</button>
+                    <button onClick={() => addCart(meal.id,meal.price,meal.name,numberofItem)} className={classes.addButton}>+Add</button>
                 </div>
             </li>
         })

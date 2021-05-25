@@ -1,0 +1,20 @@
+.total{
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    color: #8a2b06;
+}
+
+span.price{ 
+    float: right;
+}
+
+p.emptyCart{
+    text-align: center;
+    font-size: 20px;
+}
+
+.ulStyle{
+    width: 70%;
+    margin: 0 auto;
+}

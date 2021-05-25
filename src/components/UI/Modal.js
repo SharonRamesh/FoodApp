@@ -5,21 +5,23 @@ import Card from '../UI/Card'
 
 const Modal = (props) => {
 
-    const[modalClasses,updateModalStatus] = useState(Classes.modal+" "+Classes.show);
+    const modalClasses = Classes.modal+" "+Classes.show;
 
     const clearModal = () => {
-        updateModalStatus(Classes.modal+" "+Classes.hide);
+        props.hideCart();
     }
 
 return(
     
     <div id="myModal" className={modalClasses}>
         <Card classToUse='whiteCard'>
-        <div className={Classes['modal-conten']}>
+        <div className={Classes['modal-content']}>
         <span className={Classes.close} onClick={clearModal}>&times;</span>
         {props.children}
-        <button type="button" onClick={clearModal}>Close</button>
-        <button type="button">Order</button>
+        <div className={Classes.button}>
+            <button type="button" className={Classes.closebtn} onClick={clearModal}>Close</button>
+            <button type="button">Order</button>
+        </div>
         </div>
         </Card>
     </div> 

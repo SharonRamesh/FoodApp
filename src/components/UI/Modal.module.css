@@ -18,7 +18,8 @@
     padding: 20px;
     border: 1px solid #888;
     border-radius: 10px;
-    width: 50%; /* Could be more or less, depending on screen size */
+   /* width: 50%; /* Could be more or less, depending on screen size */
+   /* text-align: center; */
   }
   
   /* The Close Button */
@@ -39,7 +40,7 @@
   .modal p{
     font-weight: 600;
     font-family: system-ui;
-    font-size: 26px; 
+    /* font-size: 26px;  */
   }
 
   .hide{
@@ -48,4 +49,25 @@
 
   .show{
     display: block !important;
+  }
+
+  button{
+    background-color: #8a2b06bf;
+    cursor: pointer;
+    font: inherit;
+    border: none;
+    color: white;
+    padding: 0.75rem 3rem;
+    border-radius: 25px;
+    font-weight: bold;
+    margin: 10px;
+  }
+
+  .button{
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .closebtn{
+    background-color: #8a2b0673;
   }

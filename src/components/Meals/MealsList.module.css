@@ -17,10 +17,10 @@ li:last-child{
 }
 
 .catAdd{
-    float: right;
+    /* float: right; */
     /* padding-top: 35px; */
     position: relative;
-    top: -43px;
+    top: -68px;
 }
 
 .inputStyle{
@@ -38,7 +38,8 @@ h4{
     width: 20%;
     /* height: max-content; */
     height: auto;
-    border: 1px solid #f1d2d2;
+    /*border: 1px solid #f1d2d2;*/
+    border: groove;
 }
 
 .addButton{
