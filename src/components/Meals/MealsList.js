@@ -40,6 +40,7 @@ const MealsList = (props) => {
                     <button onClick={() => addCart(meal.id,meal.price,meal.name,numberofItem)} className={classes.addButton}>+Add</button>
                 </div>
             </li>
+
         })
     )
 }

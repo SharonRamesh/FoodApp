@@ -15,7 +15,7 @@
   .modal-content {
     background-color: #fefefe;
     margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 30px;
     border: 1px solid #888;
     border-radius: 10px;
    /* width: 50%; /* Could be more or less, depending on screen size */
@@ -28,6 +28,7 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+    padding: 5px;
   }
   
   .close:hover,
@@ -60,7 +61,7 @@
     padding: 0.75rem 3rem;
     border-radius: 25px;
     font-weight: bold;
-    margin: 10px;
+    /* margin: 10px; */
   }
 
   .button{
@@ -71,3 +72,14 @@
   .closebtn{
     background-color: #8a2b0673;
   }
+
+  .closebtn:hover{
+    background-color: #e0280a;
+  }
+
+  .orderButton:hover,
+  .orderButton:focus {
+    background-color: #e0ae0a;
+    color: #000;
+  }
+

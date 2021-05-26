@@ -15,6 +15,18 @@ p.emptyCart{
 }
 
 .ulStyle{
-    width: 70%;
-    margin: 0 auto;
+    /* width: 70%; */
+    /* margin: 0 auto; */
+    border: 1px solid;
+    border-radius: 10px;
+    /* margin: 15px; */
+    background-color: #8a2b0636;
 }
+
+.remove{
+    height: 20px;
+}
+
+h4 .price {
+    color: #9f6115;
+  }
