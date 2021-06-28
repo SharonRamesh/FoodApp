@@ -5,8 +5,15 @@
     color: #8a2b06;
 }
 
-span.price{ 
-    float: right;
+.right{ 
+    display: flex;
+    justify-content: space-between;
+}
+
+.right10{ 
+    display: flex;
+    justify-content: space-between;
+    width: 11%;
 }
 
 p.emptyCart{
@@ -17,7 +24,7 @@ p.emptyCart{
 .ulStyle{
     /* width: 70%; */
     /* margin: 0 auto; */
-    border: 1px solid;
+    /* border: 1px solid; */
     border-radius: 10px;
     /* margin: 15px; */
     background-color: #8a2b0636;
@@ -25,8 +32,33 @@ p.emptyCart{
 
 .remove{
     height: 20px;
+    cursor: pointer;
 }
 
 h4 .price {
     color: #9f6115;
+  }
+
+.inputClass{
+    width: 35%;
+    height: auto;
+    background-color: #ffffffad;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.inputClass:focus-visible{
+    outline: 1px solid #60c1ef;
+    outline-style: none;
+}
+
+.icon{
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .right10{width: 36%;top: -22px;position: relative;}
   }

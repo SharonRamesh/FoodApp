@@ -1,4 +1,4 @@
-import React,{ useState, useContext} from "react";
+import React,{ useState, useContext, useRef} from "react";
 import meals from './MealsDummy'
 import classes from "./MealsList.module.css";
 import InputComponent from '../UI/InputComponent'
@@ -22,6 +22,9 @@ const MealsList = (props) => {
             })
             updateItem(0);
         }
+        Array.from(document.querySelectorAll("input")).forEach(
+            input => (input.value = "")
+          );
     }
 
     const contxt = useContext(CartContext);
@@ -35,7 +38,7 @@ const MealsList = (props) => {
                 <div className={classes.catAdd}>
                     <span className={classes.inputStyle}>
                         <h4>Amount</h4>
-                        <InputComponent type='number' styleClass={classes.inputClass} value={numberofItem !==0  ? numberofItem : ''} onChangeHandler={handleChange}/>
+                        <InputComponent type='number' styleClass={classes.inputClass} onChangeHandler={handleChange}/>
                     </span>
                     <button onClick={() => addCart(meal.id,meal.price,meal.name,numberofItem)} className={classes.addButton}>+Add</button>
                 </div>

@@ -17,7 +17,7 @@ const HeaderCart = (props) =>{
     
      <button className={classes.button} onClick={upadteCartStatus}>
          <span className={classes.icon}><CartIcon /></span>
-         <span>Your Cart</span>
+         <span><span className={classes.hidemobile}>Your</span> Cart</span>
          <span className={classes.badge}>{cartItems}</span>
      </button>
  )

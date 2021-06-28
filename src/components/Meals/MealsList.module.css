@@ -35,11 +35,15 @@ h4{
 }
 
 .inputClass{
-    width: 20%;
-    /* height: max-content; */
+    width: 26%;
     height: auto;
-    /*border: 1px solid #f1d2d2;*/
-    border: groove;
+    border: 1px solid #60c1ef;
+    border-radius: 8px;
+}
+
+.inputClass:focus-visible{
+    outline: 1px solid #60c1ef;
+    outline-style: none;
 }
 
 .addButton{
@@ -54,3 +58,8 @@ h4{
     border-radius: 25px;
     font-weight: bold;
 }
+
+@media screen and (max-width: 768px) {
+    .addButton{padding: 14px;}
+    .inputClass{height: 28px;}
+  }
